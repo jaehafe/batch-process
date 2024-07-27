@@ -11,7 +11,7 @@ import org.jh.batchprocess.domain.entity.order.OrderItem
 import java.time.ZonedDateTime
 
 @Entity
-@Table(schema = "commerce", name = "claim_item")
+@Table(schema = "commerce", name = "claim_item") // schema = "commerce"는 commerce라는 이름의 데이터베이스
 data class ClaimItem(
     @Id @Column(name = "claim_item_no") val id : Long,
     @Column(name = "claim_receipt_no")
